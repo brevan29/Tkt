@@ -13,6 +13,7 @@ def distincts(texte):
     for valeurs in dictionnaire.values(): #On regarde chaque valeur prise par le clés du dictionnaire
         if valeurs!=0: # Si il y a eu une occurence de la lettre dans la phrase, on le compte
             nbdistincts+=1 # Sinon non.
+    return nbdistincts
 
 """Façons plus rapides de définir la liste des lettres dans la fonction:"""
 #Version 1:
