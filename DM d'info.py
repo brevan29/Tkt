@@ -20,13 +20,10 @@ print(n)
 
 # exercice 6
 def ecriture_n(n,b):
-    p=0
-    while b**p<n:
-        p+=1
     n_dans_b=[]
-    for i in range(p,-1,-1):        
-        n_dans_b.append(n%b**i)
-        n=n//b**i
+    while n!=0:
+        n_dans_b=[n%b]+n_dans_b
+        n=n//b
     return n_dans_b
 
 def est_un_palindrome(n,b):
