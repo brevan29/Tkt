@@ -1,5 +1,8 @@
 # exercice 3.3
-print(x==0 or (x>0 and 1/x>y) or (x<0 and 1/x<y))
+print(x==0 or (x>0 and 1/x<=y) or (x<0 and 1/x>=y))
+#x==0 c'est pour éviter les divisions par 0,
+#x>0, l'intervalle grise est [-inf, 1/x] donc on veut y dans cet intervalle
+#Même raisonnement pour x<0
 
 # exercice 4
 if m/d**2<=18:
@@ -13,6 +16,7 @@ n=1
 while 1/(n**2)<epsilon:
     n+=1
 print(n)
+#u(n-1)-u(n) est logiquement 1/n² dans le présent cas
 
 # exercice 6
 def ecriture_n(n,b):
